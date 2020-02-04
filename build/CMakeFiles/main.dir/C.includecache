@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/stb_image.h
+stdio.h
+-
+
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/stb_image.c
+../include/stb_image.h
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/stb_image.h
+math.h
+-
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+assert.h
+-
+stdarg.h
+-
+
