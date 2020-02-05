@@ -17,9 +17,9 @@ Mesh::Mesh(Vertex* vertices, unsigned int numVertices, unsigned int* indices,
     IndexedModel model;
 
     for(unsigned int i = 0; i < numVertices; i++){
-        model.positions.push_back(*vertices[i].GetPos());
-        model.texCoords.push_back(*vertices[i].GetTexCoord());
-        model.normals.push_back(*vertices[i].GetNormal());
+        model.positions.push_back(*vertices[i].getPos());
+        model.texCoords.push_back(*vertices[i].getTexCoord());
+        model.normals.push_back(*vertices[i].getNormal());
     }
 
     for(unsigned int i = 0; i < numIndices; i++){

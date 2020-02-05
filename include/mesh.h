@@ -19,9 +19,9 @@ class Vertex
         }
 
         // Getters
-        inline glm::vec3* GetPos() { return &pos; }
-        inline glm::vec2* GetTexCoord() { return &texCoord; }
-        inline glm::vec3* GetNormal() { return &normal; }
+        inline glm::vec3* getPos() { return &pos; }
+        inline glm::vec2* getTexCoord() { return &texCoord; }
+        inline glm::vec3* getNormal() { return &normal; }
 
     protected:
     private:

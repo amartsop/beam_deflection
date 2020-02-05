@@ -8,10 +8,11 @@
 #include "./include/texture.h"
 #include "./include/transform.h"
 #include "./include/camera.h"
-
+#include "./include/user_interface.h"
 #include <glm/ext.hpp>
 
-int a = 5;
+
+
 
 #define WIDTH 800
 #define HEIGHT 600
@@ -24,6 +25,8 @@ int a = 5;
 int main(void){
 
     Display display(WIDTH, HEIGHT, "Graphics 4");
+
+    UserInterface interface(&display);
 
     Vertex vertices[]= {Vertex(glm::vec3(-0.6,-0.5, 0), glm::vec2(0.0, 0.0)),
                         Vertex(glm::vec3(0, 0.5, 0), glm::vec2(0.5, 1.0)),
@@ -45,24 +48,27 @@ int main(void){
     // Counter
     float counter = 0.0f;
 
-    while (!display.IsClosed()){
 
-        display.Clear(BACKROUND_RED, BACKGROUND_GREEN, BACKGROUND_BLUE, 
+
+
+    while (!display.isClosed()){
+
+        display.clear(BACKROUND_RED, BACKGROUND_GREEN, BACKGROUND_BLUE, 
             BACKGROUND_TRANSPARENCY);
         
-
         glm::vec3 new_pos = glm::vec3( 0.0 * counter, 0.0 * counter, 1.0 * counter);
-        glm::vec3 new_rot = glm::vec3(0.0 * counter, 0.0 * counter, 1.0 * counter);
+        glm::vec3 new_rot = glm::vec3(1.0 * counter, 1.0 * counter, 1.0 * counter);
         
         transform.SetPos(new_pos);
         transform.SetRot(new_rot);
 
-        shader.Bind();
-        shader.Update(transform, camera);
-        texture.Bind(0);
+        shader.bind();
+        shader.update(transform, camera);
+        texture.bind(0);
         mesh2.Draw();
 
-        display.Update();
+        interface.update();
+        display.update();
 
         counter += 0.01f;
     }
@@ -70,3 +76,5 @@ int main(void){
     return 0;
 
 }
+
+

@@ -8,6 +8,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/transform.cpp.o"
   "CMakeFiles/main.dir/src/camera.cpp.o"
   "CMakeFiles/main.dir/src/obj_loader.cpp.o"
+  "CMakeFiles/main.dir/src/imgui_demo.cpp.o"
+  "CMakeFiles/main.dir/src/imgui_draw.cpp.o"
+  "CMakeFiles/main.dir/src/imgui_widgets.cpp.o"
+  "CMakeFiles/main.dir/src/imgui.cpp.o"
+  "CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o"
+  "CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o"
+  "CMakeFiles/main.dir/src/user_interface.cpp.o"
   "main.pdb"
   "main"
 )

@@ -260,11 +260,16 @@ CMakeFiles/main.dir/main.cpp.o
  .././libs/glm-0.9.7.1/glm/vector_relational.hpp
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/camera.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/display.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/imconfig.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/imgui.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/imgui_impl_opengl3.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/imgui_impl_sdl.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/mesh.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/obj_loader.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/shader.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/texture.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/transform.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/user_interface.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/main.cpp
 CMakeFiles/main.dir/src/camera.cpp.o
  .././libs/glm-0.9.7.1/glm/common.hpp
@@ -358,6 +363,41 @@ CMakeFiles/main.dir/src/display.cpp.o
  .././libs/glew-1.13.0/include/GL/glew.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/display.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/display.cpp
+CMakeFiles/main.dir/src/imgui.cpp.o
+ .././include/imconfig.h
+ .././include/imgui.h
+ .././include/imgui_internal.h
+ .././include/imstb_textedit.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui.cpp
+CMakeFiles/main.dir/src/imgui_demo.cpp.o
+ .././include/imconfig.h
+ .././include/imgui.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_demo.cpp
+CMakeFiles/main.dir/src/imgui_draw.cpp.o
+ .././include/imconfig.h
+ .././include/imgui.h
+ .././include/imgui_internal.h
+ .././include/imstb_rectpack.h
+ .././include/imstb_textedit.h
+ .././include/imstb_truetype.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_draw.cpp
+CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o
+ .././include/imconfig.h
+ .././include/imgui.h
+ .././include/imgui_impl_opengl3.h
+ .././libs/glew-1.13.0/include/GL/glew.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_impl_opengl3.cpp
+CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o
+ .././include/imconfig.h
+ .././include/imgui.h
+ .././include/imgui_impl_sdl.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_impl_sdl.cpp
+CMakeFiles/main.dir/src/imgui_widgets.cpp.o
+ .././include/imconfig.h
+ .././include/imgui.h
+ .././include/imgui_internal.h
+ .././include/imstb_textedit.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_widgets.cpp
 CMakeFiles/main.dir/src/mesh.cpp.o
  .././libs/glew-1.13.0/include/GL/glew.h
  .././libs/glm-0.9.7.1/glm/common.hpp
@@ -718,3 +758,12 @@ CMakeFiles/main.dir/src/transform.cpp.o
  .././libs/glm-0.9.7.1/glm/vector_relational.hpp
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/transform.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/transform.cpp
+CMakeFiles/main.dir/src/user_interface.cpp.o
+ .././libs/glew-1.13.0/include/GL/glew.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/display.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/imconfig.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/imgui.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/imgui_impl_opengl3.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/imgui_impl_sdl.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/user_interface.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/user_interface.cpp

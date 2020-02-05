@@ -36,13 +36,13 @@ Shader::Shader(const std::string& fileName){
     m_unirform[TRANSFORM_U] = glGetUniformLocation(m_program, "transform");
 }
 
-void Shader::Bind(){
+void Shader::bind(){
     glUseProgram(m_program);
 }
 
-void Shader::Update(const Transform& transform, const Camera& camera)
+void Shader::update(const Transform& transform, const Camera& camera)
 {
-    glm::mat4 model = camera.GetViewProjection() * transform.GetModel();
+    glm::mat4 model = camera.getViewProjection() * transform.GetModel();
     glUniformMatrix4fv( m_unirform[TRANSFORM_U], 1, GL_FALSE, &model[0][0]);
 }
 

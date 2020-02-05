@@ -28,7 +28,7 @@ class Transform
             }
 
         //Getters
-        inline glm::vec3 GetPos() { return m_pos; }
+        inline glm::vec3 getPos() { return m_pos; }
         inline glm::vec3 GetRot() { return m_rot; }
         inline glm::vec3 GetScale() { return m_scale; }
 

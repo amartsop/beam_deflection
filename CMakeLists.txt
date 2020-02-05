@@ -43,9 +43,16 @@ set(SOURCES
 	./src/transform.cpp
 	./src/camera.cpp
 	./src/obj_loader.cpp
+	./src/imgui_demo.cpp
+	./src/imgui_draw.cpp
+	./src/imgui_widgets.cpp
+	./src/imgui.cpp
+	./src/imgui_impl_opengl3.cpp
+	./src/imgui_impl_sdl.cpp
+	./src/user_interface.cpp
 )
 
-add_executable(main main.cpp ${SOURCES})
+add_executable(main main.cpp ${SOURCES} )
 
 
 target_link_libraries(main

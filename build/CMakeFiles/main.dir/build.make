@@ -273,6 +273,174 @@ CMakeFiles/main.dir/src/obj_loader.cpp.o.provides: CMakeFiles/main.dir/src/obj_l
 CMakeFiles/main.dir/src/obj_loader.cpp.o.provides.build: CMakeFiles/main.dir/src/obj_loader.cpp.o
 
 
+CMakeFiles/main.dir/src/imgui_demo.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/imgui_demo.cpp.o: ../src/imgui_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/src/imgui_demo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/imgui_demo.cpp.o -c /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_demo.cpp
+
+CMakeFiles/main.dir/src/imgui_demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/imgui_demo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_demo.cpp > CMakeFiles/main.dir/src/imgui_demo.cpp.i
+
+CMakeFiles/main.dir/src/imgui_demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/imgui_demo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_demo.cpp -o CMakeFiles/main.dir/src/imgui_demo.cpp.s
+
+CMakeFiles/main.dir/src/imgui_demo.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/src/imgui_demo.cpp.o.requires
+
+CMakeFiles/main.dir/src/imgui_demo.cpp.o.provides: CMakeFiles/main.dir/src/imgui_demo.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_demo.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/imgui_demo.cpp.o.provides
+
+CMakeFiles/main.dir/src/imgui_demo.cpp.o.provides.build: CMakeFiles/main.dir/src/imgui_demo.cpp.o
+
+
+CMakeFiles/main.dir/src/imgui_draw.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/imgui_draw.cpp.o: ../src/imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/src/imgui_draw.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/imgui_draw.cpp.o -c /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_draw.cpp
+
+CMakeFiles/main.dir/src/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/imgui_draw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_draw.cpp > CMakeFiles/main.dir/src/imgui_draw.cpp.i
+
+CMakeFiles/main.dir/src/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/imgui_draw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_draw.cpp -o CMakeFiles/main.dir/src/imgui_draw.cpp.s
+
+CMakeFiles/main.dir/src/imgui_draw.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/src/imgui_draw.cpp.o.requires
+
+CMakeFiles/main.dir/src/imgui_draw.cpp.o.provides: CMakeFiles/main.dir/src/imgui_draw.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_draw.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/imgui_draw.cpp.o.provides
+
+CMakeFiles/main.dir/src/imgui_draw.cpp.o.provides.build: CMakeFiles/main.dir/src/imgui_draw.cpp.o
+
+
+CMakeFiles/main.dir/src/imgui_widgets.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/imgui_widgets.cpp.o: ../src/imgui_widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/src/imgui_widgets.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/imgui_widgets.cpp.o -c /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_widgets.cpp
+
+CMakeFiles/main.dir/src/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/imgui_widgets.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_widgets.cpp > CMakeFiles/main.dir/src/imgui_widgets.cpp.i
+
+CMakeFiles/main.dir/src/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/imgui_widgets.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_widgets.cpp -o CMakeFiles/main.dir/src/imgui_widgets.cpp.s
+
+CMakeFiles/main.dir/src/imgui_widgets.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/src/imgui_widgets.cpp.o.requires
+
+CMakeFiles/main.dir/src/imgui_widgets.cpp.o.provides: CMakeFiles/main.dir/src/imgui_widgets.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_widgets.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/imgui_widgets.cpp.o.provides
+
+CMakeFiles/main.dir/src/imgui_widgets.cpp.o.provides.build: CMakeFiles/main.dir/src/imgui_widgets.cpp.o
+
+
+CMakeFiles/main.dir/src/imgui.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/imgui.cpp.o: ../src/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/src/imgui.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/imgui.cpp.o -c /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui.cpp
+
+CMakeFiles/main.dir/src/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/imgui.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui.cpp > CMakeFiles/main.dir/src/imgui.cpp.i
+
+CMakeFiles/main.dir/src/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/imgui.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui.cpp -o CMakeFiles/main.dir/src/imgui.cpp.s
+
+CMakeFiles/main.dir/src/imgui.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/src/imgui.cpp.o.requires
+
+CMakeFiles/main.dir/src/imgui.cpp.o.provides: CMakeFiles/main.dir/src/imgui.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/imgui.cpp.o.provides
+
+CMakeFiles/main.dir/src/imgui.cpp.o.provides.build: CMakeFiles/main.dir/src/imgui.cpp.o
+
+
+CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o: ../src/imgui_impl_opengl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o -c /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_impl_opengl3.cpp
+
+CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_impl_opengl3.cpp > CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.i
+
+CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_impl_opengl3.cpp -o CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.s
+
+CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o.requires
+
+CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o.provides: CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o.provides
+
+CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o.provides.build: CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o
+
+
+CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o: ../src/imgui_impl_sdl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o -c /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_impl_sdl.cpp
+
+CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_impl_sdl.cpp > CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.i
+
+CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_impl_sdl.cpp -o CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.s
+
+CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o.requires
+
+CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o.provides: CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o.provides
+
+CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o.provides.build: CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o
+
+
+CMakeFiles/main.dir/src/user_interface.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/user_interface.cpp.o: ../src/user_interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/src/user_interface.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/user_interface.cpp.o -c /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/user_interface.cpp
+
+CMakeFiles/main.dir/src/user_interface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/user_interface.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/user_interface.cpp > CMakeFiles/main.dir/src/user_interface.cpp.i
+
+CMakeFiles/main.dir/src/user_interface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/user_interface.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/user_interface.cpp -o CMakeFiles/main.dir/src/user_interface.cpp.s
+
+CMakeFiles/main.dir/src/user_interface.cpp.o.requires:
+
+.PHONY : CMakeFiles/main.dir/src/user_interface.cpp.o.requires
+
+CMakeFiles/main.dir/src/user_interface.cpp.o.provides: CMakeFiles/main.dir/src/user_interface.cpp.o.requires
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/user_interface.cpp.o.provides.build
+.PHONY : CMakeFiles/main.dir/src/user_interface.cpp.o.provides
+
+CMakeFiles/main.dir/src/user_interface.cpp.o.provides.build: CMakeFiles/main.dir/src/user_interface.cpp.o
+
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
@@ -283,7 +451,14 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/stb_image.c.o" \
 "CMakeFiles/main.dir/src/transform.cpp.o" \
 "CMakeFiles/main.dir/src/camera.cpp.o" \
-"CMakeFiles/main.dir/src/obj_loader.cpp.o"
+"CMakeFiles/main.dir/src/obj_loader.cpp.o" \
+"CMakeFiles/main.dir/src/imgui_demo.cpp.o" \
+"CMakeFiles/main.dir/src/imgui_draw.cpp.o" \
+"CMakeFiles/main.dir/src/imgui_widgets.cpp.o" \
+"CMakeFiles/main.dir/src/imgui.cpp.o" \
+"CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o" \
+"CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o" \
+"CMakeFiles/main.dir/src/user_interface.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -297,6 +472,13 @@ main: CMakeFiles/main.dir/src/stb_image.c.o
 main: CMakeFiles/main.dir/src/transform.cpp.o
 main: CMakeFiles/main.dir/src/camera.cpp.o
 main: CMakeFiles/main.dir/src/obj_loader.cpp.o
+main: CMakeFiles/main.dir/src/imgui_demo.cpp.o
+main: CMakeFiles/main.dir/src/imgui_draw.cpp.o
+main: CMakeFiles/main.dir/src/imgui_widgets.cpp.o
+main: CMakeFiles/main.dir/src/imgui.cpp.o
+main: CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o
+main: CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o
+main: CMakeFiles/main.dir/src/user_interface.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: /usr/lib/x86_64-linux-gnu/libGL.so
 main: /usr/lib/x86_64-linux-gnu/libGLU.so
@@ -321,7 +503,7 @@ main: /usr/lib/x86_64-linux-gnu/libXcursor.so
 main: /usr/lib/x86_64-linux-gnu/libGL.so
 main: /usr/lib/x86_64-linux-gnu/libGLU.so
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -338,6 +520,13 @@ CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/stb_image.c.o.requires
 CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/transform.cpp.o.requires
 CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/camera.cpp.o.requires
 CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/obj_loader.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/imgui_demo.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/imgui_draw.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/imgui_widgets.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/imgui.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o.requires
+CMakeFiles/main.dir/requires: CMakeFiles/main.dir/src/user_interface.cpp.o.requires
 
 .PHONY : CMakeFiles/main.dir/requires
 

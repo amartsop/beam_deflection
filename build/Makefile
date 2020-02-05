@@ -601,6 +601,168 @@ src/display.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/display.cpp.s
 .PHONY : src/display.cpp.s
 
+src/imgui.o: src/imgui.cpp.o
+
+.PHONY : src/imgui.o
+
+# target to build an object file
+src/imgui.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui.cpp.o
+.PHONY : src/imgui.cpp.o
+
+src/imgui.i: src/imgui.cpp.i
+
+.PHONY : src/imgui.i
+
+# target to preprocess a source file
+src/imgui.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui.cpp.i
+.PHONY : src/imgui.cpp.i
+
+src/imgui.s: src/imgui.cpp.s
+
+.PHONY : src/imgui.s
+
+# target to generate assembly for a file
+src/imgui.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui.cpp.s
+.PHONY : src/imgui.cpp.s
+
+src/imgui_demo.o: src/imgui_demo.cpp.o
+
+.PHONY : src/imgui_demo.o
+
+# target to build an object file
+src/imgui_demo.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_demo.cpp.o
+.PHONY : src/imgui_demo.cpp.o
+
+src/imgui_demo.i: src/imgui_demo.cpp.i
+
+.PHONY : src/imgui_demo.i
+
+# target to preprocess a source file
+src/imgui_demo.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_demo.cpp.i
+.PHONY : src/imgui_demo.cpp.i
+
+src/imgui_demo.s: src/imgui_demo.cpp.s
+
+.PHONY : src/imgui_demo.s
+
+# target to generate assembly for a file
+src/imgui_demo.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_demo.cpp.s
+.PHONY : src/imgui_demo.cpp.s
+
+src/imgui_draw.o: src/imgui_draw.cpp.o
+
+.PHONY : src/imgui_draw.o
+
+# target to build an object file
+src/imgui_draw.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_draw.cpp.o
+.PHONY : src/imgui_draw.cpp.o
+
+src/imgui_draw.i: src/imgui_draw.cpp.i
+
+.PHONY : src/imgui_draw.i
+
+# target to preprocess a source file
+src/imgui_draw.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_draw.cpp.i
+.PHONY : src/imgui_draw.cpp.i
+
+src/imgui_draw.s: src/imgui_draw.cpp.s
+
+.PHONY : src/imgui_draw.s
+
+# target to generate assembly for a file
+src/imgui_draw.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_draw.cpp.s
+.PHONY : src/imgui_draw.cpp.s
+
+src/imgui_impl_opengl3.o: src/imgui_impl_opengl3.cpp.o
+
+.PHONY : src/imgui_impl_opengl3.o
+
+# target to build an object file
+src/imgui_impl_opengl3.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o
+.PHONY : src/imgui_impl_opengl3.cpp.o
+
+src/imgui_impl_opengl3.i: src/imgui_impl_opengl3.cpp.i
+
+.PHONY : src/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+src/imgui_impl_opengl3.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.i
+.PHONY : src/imgui_impl_opengl3.cpp.i
+
+src/imgui_impl_opengl3.s: src/imgui_impl_opengl3.cpp.s
+
+.PHONY : src/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+src/imgui_impl_opengl3.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.s
+.PHONY : src/imgui_impl_opengl3.cpp.s
+
+src/imgui_impl_sdl.o: src/imgui_impl_sdl.cpp.o
+
+.PHONY : src/imgui_impl_sdl.o
+
+# target to build an object file
+src/imgui_impl_sdl.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o
+.PHONY : src/imgui_impl_sdl.cpp.o
+
+src/imgui_impl_sdl.i: src/imgui_impl_sdl.cpp.i
+
+.PHONY : src/imgui_impl_sdl.i
+
+# target to preprocess a source file
+src/imgui_impl_sdl.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.i
+.PHONY : src/imgui_impl_sdl.cpp.i
+
+src/imgui_impl_sdl.s: src/imgui_impl_sdl.cpp.s
+
+.PHONY : src/imgui_impl_sdl.s
+
+# target to generate assembly for a file
+src/imgui_impl_sdl.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.s
+.PHONY : src/imgui_impl_sdl.cpp.s
+
+src/imgui_widgets.o: src/imgui_widgets.cpp.o
+
+.PHONY : src/imgui_widgets.o
+
+# target to build an object file
+src/imgui_widgets.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_widgets.cpp.o
+.PHONY : src/imgui_widgets.cpp.o
+
+src/imgui_widgets.i: src/imgui_widgets.cpp.i
+
+.PHONY : src/imgui_widgets.i
+
+# target to preprocess a source file
+src/imgui_widgets.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_widgets.cpp.i
+.PHONY : src/imgui_widgets.cpp.i
+
+src/imgui_widgets.s: src/imgui_widgets.cpp.s
+
+.PHONY : src/imgui_widgets.s
+
+# target to generate assembly for a file
+src/imgui_widgets.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/imgui_widgets.cpp.s
+.PHONY : src/imgui_widgets.cpp.s
+
 src/mesh.o: src/mesh.cpp.o
 
 .PHONY : src/mesh.o
@@ -763,6 +925,33 @@ src/transform.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/transform.cpp.s
 .PHONY : src/transform.cpp.s
 
+src/user_interface.o: src/user_interface.cpp.o
+
+.PHONY : src/user_interface.o
+
+# target to build an object file
+src/user_interface.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/user_interface.cpp.o
+.PHONY : src/user_interface.cpp.o
+
+src/user_interface.i: src/user_interface.cpp.i
+
+.PHONY : src/user_interface.i
+
+# target to preprocess a source file
+src/user_interface.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/user_interface.cpp.i
+.PHONY : src/user_interface.cpp.i
+
+src/user_interface.s: src/user_interface.cpp.s
+
+.PHONY : src/user_interface.s
+
+# target to generate assembly for a file
+src/user_interface.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/user_interface.cpp.s
+.PHONY : src/user_interface.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -812,6 +1001,24 @@ help:
 	@echo "... src/display.o"
 	@echo "... src/display.i"
 	@echo "... src/display.s"
+	@echo "... src/imgui.o"
+	@echo "... src/imgui.i"
+	@echo "... src/imgui.s"
+	@echo "... src/imgui_demo.o"
+	@echo "... src/imgui_demo.i"
+	@echo "... src/imgui_demo.s"
+	@echo "... src/imgui_draw.o"
+	@echo "... src/imgui_draw.i"
+	@echo "... src/imgui_draw.s"
+	@echo "... src/imgui_impl_opengl3.o"
+	@echo "... src/imgui_impl_opengl3.i"
+	@echo "... src/imgui_impl_opengl3.s"
+	@echo "... src/imgui_impl_sdl.o"
+	@echo "... src/imgui_impl_sdl.i"
+	@echo "... src/imgui_impl_sdl.s"
+	@echo "... src/imgui_widgets.o"
+	@echo "... src/imgui_widgets.i"
+	@echo "... src/imgui_widgets.s"
 	@echo "... src/mesh.o"
 	@echo "... src/mesh.i"
 	@echo "... src/mesh.s"
@@ -830,6 +1037,9 @@ help:
 	@echo "... src/transform.o"
 	@echo "... src/transform.i"
 	@echo "... src/transform.s"
+	@echo "... src/user_interface.o"
+	@echo "... src/user_interface.i"
+	@echo "... src/user_interface.s"
 .PHONY : help
 
 

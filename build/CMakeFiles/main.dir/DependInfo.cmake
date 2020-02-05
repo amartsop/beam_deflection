@@ -29,11 +29,18 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/main.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/main.cpp.o"
   "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/camera.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/camera.cpp.o"
   "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/display.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/display.cpp.o"
+  "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/imgui.cpp.o"
+  "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_demo.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/imgui_demo.cpp.o"
+  "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_draw.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/imgui_draw.cpp.o"
+  "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_impl_opengl3.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o"
+  "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_impl_sdl.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o"
+  "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui_widgets.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/imgui_widgets.cpp.o"
   "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/mesh.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/mesh.cpp.o"
   "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/obj_loader.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/obj_loader.cpp.o"
   "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/shader.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/shader.cpp.o"
   "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/texture.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/texture.cpp.o"
   "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/transform.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/transform.cpp.o"
+  "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/user_interface.cpp" "/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/build/CMakeFiles/main.dir/src/user_interface.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

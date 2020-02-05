@@ -5,15 +5,21 @@
 #include <SDL2/SDL.h>
 #include <string>
 
+
+
 class Display
 {
     public:
 
         Display(int width, int height, const std::string& title);
 
-        void Clear(float r, float g, float b, float a);
-        void Update();
-        bool IsClosed();
+        void clear(float r, float g, float b, float a);
+        void update();
+        bool isClosed();
+
+        // Getters
+        SDL_Window* getWindowHandle(void) { return m_window; }
+        SDL_GLContext* getGlContextHandle(void) { return &m_glContext; } 
 
         virtual ~Display();
 
