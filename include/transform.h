@@ -8,13 +8,12 @@
 
 class Transform
 {
-
     public:
         Transform(const glm::vec3& pos = glm::vec3(), 
             const glm::vec3& rot = glm::vec3(), 
             const glm::vec3& scale = glm::vec3(1.0, 1.0, 1.0));
 
-            inline glm::mat4 GetModel() const {
+            glm::mat4 GetModel() {
 
                 glm::mat4 posMatrix = glm::translate(m_pos);
                 glm::mat4 rotxMatrix = glm::rotate(m_rot.x, glm::vec3(1, 0, 0));

@@ -40,7 +40,7 @@ void Shader::bind(){
     glUseProgram(m_program);
 }
 
-void Shader::update(const Transform& transform, const Camera& camera)
+void Shader::update(Transform& transform, Camera& camera)
 {
     glm::mat4 model = camera.getViewProjection() * transform.GetModel();
     glUniformMatrix4fv( m_unirform[TRANSFORM_U], 1, GL_FALSE, &model[0][0]);

@@ -14,7 +14,7 @@ class Shader
         Shader(const std::string& fileName);
         
         void bind(); 
-        void update(const Transform& transform, const Camera& camera);
+        void update(Transform& transform, Camera& camera);
 
         virtual ~Shader();
 

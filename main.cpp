@@ -49,26 +49,34 @@ int main(void){
     float counter = 0.0f;
 
 
-
-
     while (!display.isClosed()){
 
         display.clear(BACKROUND_RED, BACKGROUND_GREEN, BACKGROUND_BLUE, 
             BACKGROUND_TRANSPARENCY);
-        
-        glm::vec3 new_pos = glm::vec3( 0.0 * counter, 0.0 * counter, 1.0 * counter);
-        glm::vec3 new_rot = glm::vec3(1.0 * counter, 1.0 * counter, 1.0 * counter);
-        
+
+        // Move model        
+        glm::vec3 new_pos = glm::vec3( 0.0 * counter, 0.0 * counter, 0.0 * counter);        
+        glm::vec3 new_rot = glm::vec3(0.0 * counter, 0.0 * counter, 0.0 * counter); 
         transform.SetPos(new_pos);
         transform.SetRot(new_rot);
 
+
+        // Move camera
+        glm::vec3 cameraForward = glm::vec3(0.0, 0, 1);
+        glm::vec3 cameraUpward = glm::vec3(0, 1, 0);
+        glm::vec3 cameraPosition = glm::vec3(0, 0, counter);
+        camera.setCameraOrientation(cameraForward, cameraUpward);
+        camera.setCameraPosition(cameraPosition);
+
+
+        // Updates
         shader.bind();
         shader.update(transform, camera);
         texture.bind(0);
         mesh2.Draw();
-
         interface.update();
         display.update();
+
 
         counter += 0.01f;
     }

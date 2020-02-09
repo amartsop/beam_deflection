@@ -9,12 +9,11 @@ UserInterface::UserInterface(Display *display)
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;
-    //io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
     //io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
 
     // Setup Dear ImGui style
     ImGui::StyleColorsDark();
-    //ImGui::StyleColorsClassic();
 
     // Setup Platform/Renderer bindings
     ImGui_ImplSDL2_InitForOpenGL((*display).getWindowHandle(), 
@@ -44,6 +43,8 @@ void UserInterface::simpleWindow(void)
     ImGui::End();
 }
 
+
+
 void UserInterface::update()
 {
 
@@ -52,9 +53,8 @@ void UserInterface::update()
     ImGui::NewFrame();
     
     // Draw a window
-    // simpleWindow();
+    simpleWindow();
 
-    ImGui::ShowDemoWindow();
     // Rendering
     ImGui::Render();
     ImGuiIO& io = ImGui::GetIO(); (void)io;

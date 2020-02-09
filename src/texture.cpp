@@ -6,9 +6,6 @@
 #include "../include/stb_image.h"
 
 
-// extern "C"{
-// }
-
 Texture::Texture(const std::string& fileName)
 {
     int width, height, numComponents;
