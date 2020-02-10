@@ -56,19 +56,29 @@ bool Display::isClosed()
     return m_isClosed;
 }
 
-void Display::update()
+void Display::update(SDL_Event &events)
 {
-
     SDL_GL_SwapWindow(m_window);
-
-    SDL_Event e;
-
-    while(SDL_PollEvent(&e))
-    {
-        if (e.type == SDL_QUIT)
-        {
-            m_isClosed = true;
-        }
-    }
+    m_isClosed = closeDisplayCheck(events);
 }
 
+bool Display::closeDisplayCheck(SDL_Event &events)
+{
+    bool flagQuit = 0;
+    bool flagEscapeDown = 0;
+
+      if (SDL_PollEvent(&events)){
+
+        switch (events.type)
+        {
+            case SDL_QUIT: flagQuit = 1; break;
+            case SDL_KEYDOWN:
+                flagEscapeDown= (events.key.keysym.sym == SDLK_ESCAPE) ? (1) : (0);
+                break;
+            default:
+                break;
+        }        
+	}
+
+    return (flagQuit | flagEscapeDown);  
+}

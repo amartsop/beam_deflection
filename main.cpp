@@ -1,6 +1,7 @@
 #include <iostream>
 #include <experimental/filesystem>
 #include <GL/glew.h>
+#include <SDL2/SDL.h>
 
 #include "./include/display.h"
 #include "./include/shader.h"
@@ -9,9 +10,8 @@
 #include "./include/transform.h"
 #include "./include/camera.h"
 #include "./include/user_interface.h"
+#include "./include/events_handler.h"
 #include <glm/ext.hpp>
-
-
 
 
 #define WIDTH 800
@@ -24,10 +24,16 @@
 
 int main(void){
 
+    // // Events object 
+    // EventsHandler events;
+
+    // Display object
     Display display(WIDTH, HEIGHT, "Graphics 4");
 
+    // User inteface (imgui & events)
     UserInterface interface(&display);
 
+    // Geometry loading
     Vertex vertices[]= {Vertex(glm::vec3(-0.6,-0.5, 0), glm::vec2(0.0, 0.0)),
                         Vertex(glm::vec3(0, 0.5, 0), glm::vec2(0.5, 1.0)),
                         Vertex(glm::vec3(0.5, -0.5, 0), glm::vec2(1.0, 0.0)) };
@@ -38,19 +44,30 @@ int main(void){
         sizeof(indices) / sizeof(indices[0]));
 
     Mesh mesh2("./share/monkey3.obj");
+
+    // Shader object
     Shader shader("./share/basicShader");
+
+    // Textures object 
     Texture texture("./share/grate_g.png");
+
+    // Camera object
     Camera camera(glm::vec3(0, 0, -3), 70.0f, (float)WIDTH / (float)HEIGHT, 
         0.01f, 1000.0f);
 
+    // Model transforms
     Transform transform;
+
 
     // Counter
     float counter = 0.0f;
 
+    //SDL events handle
+    SDL_Event events;
 
     while (!display.isClosed()){
 
+        // Clear display
         display.clear(BACKROUND_RED, BACKGROUND_GREEN, BACKGROUND_BLUE, 
             BACKGROUND_TRANSPARENCY);
 
@@ -60,7 +77,6 @@ int main(void){
         transform.SetPos(new_pos);
         transform.SetRot(new_rot);
 
-
         // Move camera
         glm::vec3 cameraForward = glm::vec3(0.0, 0, 1);
         glm::vec3 cameraUpward = glm::vec3(0, 1, 0);
@@ -68,15 +84,23 @@ int main(void){
         camera.setCameraOrientation(cameraForward, cameraUpward);
         camera.setCameraPosition(cameraPosition);
 
-
-        // Updates
+        // Updates draw update
         shader.bind();
         shader.update(transform, camera);
         texture.bind(0);
         mesh2.Draw();
-        interface.update();
-        display.update();
 
+        // Interface update
+        interface.update();
+
+        // Camera update
+        camera.update(events);
+
+        // Display update
+        display.update(events);
+
+        // // Poll events
+        // events.pollEvents();
 
         counter += 0.01f;
     }

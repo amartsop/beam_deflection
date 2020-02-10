@@ -259,6 +259,7 @@ CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/vec4.hpp
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/vector_relational.hpp
 CMakeFiles/main.dir/main.cpp.o: .././include/camera.h
 CMakeFiles/main.dir/main.cpp.o: .././include/display.h
+CMakeFiles/main.dir/main.cpp.o: .././include/events_handler.h
 CMakeFiles/main.dir/main.cpp.o: .././include/imconfig.h
 CMakeFiles/main.dir/main.cpp.o: .././include/imgui.h
 CMakeFiles/main.dir/main.cpp.o: .././include/imgui_impl_opengl3.h
@@ -362,6 +363,9 @@ CMakeFiles/main.dir/src/camera.cpp.o: ../src/camera.cpp
 CMakeFiles/main.dir/src/display.cpp.o: .././libs/glew-1.13.0/include/GL/glew.h
 CMakeFiles/main.dir/src/display.cpp.o: ../include/display.h
 CMakeFiles/main.dir/src/display.cpp.o: ../src/display.cpp
+
+CMakeFiles/main.dir/src/events_handler.cpp.o: ../include/events_handler.h
+CMakeFiles/main.dir/src/events_handler.cpp.o: ../src/events_handler.cpp
 
 CMakeFiles/main.dir/src/imgui.cpp.o: .././include/imconfig.h
 CMakeFiles/main.dir/src/imgui.cpp.o: .././include/imgui.h

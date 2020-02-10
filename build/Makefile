@@ -601,6 +601,33 @@ src/display.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/display.cpp.s
 .PHONY : src/display.cpp.s
 
+src/events_handler.o: src/events_handler.cpp.o
+
+.PHONY : src/events_handler.o
+
+# target to build an object file
+src/events_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/events_handler.cpp.o
+.PHONY : src/events_handler.cpp.o
+
+src/events_handler.i: src/events_handler.cpp.i
+
+.PHONY : src/events_handler.i
+
+# target to preprocess a source file
+src/events_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/events_handler.cpp.i
+.PHONY : src/events_handler.cpp.i
+
+src/events_handler.s: src/events_handler.cpp.s
+
+.PHONY : src/events_handler.s
+
+# target to generate assembly for a file
+src/events_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/events_handler.cpp.s
+.PHONY : src/events_handler.cpp.s
+
 src/imgui.o: src/imgui.cpp.o
 
 .PHONY : src/imgui.o
@@ -1001,6 +1028,9 @@ help:
 	@echo "... src/display.o"
 	@echo "... src/display.i"
 	@echo "... src/display.s"
+	@echo "... src/events_handler.o"
+	@echo "... src/events_handler.i"
+	@echo "... src/events_handler.s"
 	@echo "... src/imgui.o"
 	@echo "... src/imgui.i"
 	@echo "... src/imgui.s"

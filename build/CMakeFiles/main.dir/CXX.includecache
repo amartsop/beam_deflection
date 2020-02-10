@@ -2203,11 +2203,21 @@ glm/glm.hpp
 -
 glm/gtx/transform.hpp
 -
+iostream
+-
+SDL2/SDL.h
+-
 
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/display.h
 SDL2/SDL.h
 -
 string
+-
+
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/events_handler.h
+SDL2/SDL.h
+-
+iostream
 -
 
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/imconfig.h
@@ -2301,11 +2311,21 @@ glm/glm.hpp
 -
 glm/gtx/transform.hpp
 -
+iostream
+-
+SDL2/SDL.h
+-
 
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/display.h
 SDL2/SDL.h
 -
 string
+-
+
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/events_handler.h
+SDL2/SDL.h
+-
+iostream
 -
 
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/imconfig.h
@@ -2405,6 +2425,8 @@ experimental/filesystem
 -
 GL/glew.h
 -
+SDL2/SDL.h
+-
 ./include/display.h
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/display.h
 ./include/shader.h
@@ -2419,6 +2441,8 @@ GL/glew.h
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/camera.h
 ./include/user_interface.h
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/user_interface.h
+./include/events_handler.h
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/events_handler.h
 glm/ext.hpp
 -
 
@@ -2435,6 +2459,10 @@ stdio.h
 -
 GL/glew.h
 -
+
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/events_handler.cpp
+../include/events_handler.h
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/events_handler.h
 
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/imgui.cpp
 imgui.h

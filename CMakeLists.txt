@@ -50,6 +50,7 @@ set(SOURCES
 	./src/imgui_impl_opengl3.cpp
 	./src/imgui_impl_sdl.cpp
 	./src/user_interface.cpp
+	./src/events_handler.cpp
 )
 
 add_executable(main main.cpp ${SOURCES} )

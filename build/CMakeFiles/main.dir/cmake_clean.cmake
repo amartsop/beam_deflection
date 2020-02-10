@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/imgui_impl_opengl3.cpp.o"
   "CMakeFiles/main.dir/src/imgui_impl_sdl.cpp.o"
   "CMakeFiles/main.dir/src/user_interface.cpp.o"
+  "CMakeFiles/main.dir/src/events_handler.cpp.o"
   "main.pdb"
   "main"
 )

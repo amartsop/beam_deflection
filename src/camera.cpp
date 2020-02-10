@@ -22,6 +22,17 @@ void Camera::setCameraOrientation(glm::vec3 forwardFrame, glm::vec3 upwardFrame)
     m_forward = forwardFrame; m_up = upwardFrame;
 }
 
+void Camera::update(SDL_Event &events)
+{
+    // if (event.type == SDL_KEYDOWN){
+    //     std::cout << (event.key.keysym.sym == SDLK_RIGHT) << std::endl;
+    // }
+    if (SDL_PollEvent(&events)){
+        std::cout << (events.key.keysym.sym == SDLK_RIGHT) << std::endl;
+    }
+}
+
+
 glm::mat4 Camera::getViewProjection(void)
 {
     return m_perspective *  glm::lookAt(m_position, m_position + 

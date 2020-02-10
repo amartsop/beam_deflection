@@ -4,9 +4,10 @@
 
 #include <glm/glm.hpp>
 #include <glm/gtx/transform.hpp>
+#include <iostream>
+#include <SDL2/SDL.h>
 
-
-//Doesnt update when we resize the window
+//Doesn't update when we resize the window
 
 class Camera
 {
@@ -14,9 +15,13 @@ class Camera
         Camera(const glm::vec3 &pos, float fov, float aspect, float zNear, 
             float zFar);
 
+        // Setters
         void setCameraPosition(glm::vec3 position);
         void setCameraOrientation(glm::vec3 forwardFrame, 
             glm::vec3 upwardFrame);
+
+        // Camera update
+        void update(SDL_Event &events);
 
 
         glm::mat4 getViewProjection(void);
