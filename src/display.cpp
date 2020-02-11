@@ -73,7 +73,7 @@ bool Display::closeDisplayCheck(SDL_Event &events)
         {
             case SDL_QUIT: flagQuit = 1; break;
             case SDL_KEYDOWN:
-                flagEscapeDown= (events.key.keysym.sym == SDLK_ESCAPE) ? (1) : (0);
+                flagEscapeDown = (events.key.keysym.sym == SDLK_ESCAPE) ? (1) : (0);
                 break;
             default:
                 break;

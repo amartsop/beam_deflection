@@ -31,6 +31,22 @@ class Camera
 
     private:
 
+        void cameraMotion(void);
+
+        void keyboardMapping(SDL_Event &events);
+
+        const float m_cameraForwardScale = 0.3;
+
+        enum {
+            wKeyNum,
+            sKeyNum,
+            aKeyNum,
+            dKeyNum,
+            keysNum
+        };
+
+        bool m_cameraKeyboard[keysNum];
+
         glm::mat4 m_perspective;
         glm::vec3 m_initialPosition;
         glm::vec3 m_position;
