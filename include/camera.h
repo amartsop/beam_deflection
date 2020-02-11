@@ -5,7 +5,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtx/transform.hpp>
 #include <iostream>
-#include <SDL2/SDL.h>
+#include "events_handler.h"
 
 //Doesn't update when we resize the window
 
@@ -21,7 +21,7 @@ class Camera
             glm::vec3 upwardFrame);
 
         // Camera update
-        void update(SDL_Event &events);
+        void update(EventsHandler &events);
 
 
         glm::mat4 getViewProjection(void);
@@ -33,9 +33,10 @@ class Camera
 
         void cameraMotion(void);
 
-        void keyboardMapping(SDL_Event &events);
+        void keyboardMapping(EventsHandler &events);
 
-        const float m_cameraForwardScale = 0.3;
+        const float m_cameraForwardScale = 0.1;
+        const float m_cameraSideScale = 0.1;
 
         enum {
             wKeyNum,

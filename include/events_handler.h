@@ -15,8 +15,8 @@ class EventsHandler
         //Getters
         bool getQuitStatus() { return m_quit; }
         bool getEscapeStatus() { return m_escapeDown; }
-        bool getRightArrowStatus() { return m_rightArrow; }
-        bool getLeftArrrowStatus() { return m_leftArrow; }
+        bool getWKeyStatus() { return m_wDown; }
+        bool getSKeyStatus() { return m_sDown; }
 
 
         ~EventsHandler(void) {};
@@ -24,12 +24,12 @@ class EventsHandler
     private:
         
         void keyDownEvents(SDL_Event &event);
-
+        void keyUpEvents(SDL_Event &event);
 
         bool m_quit = false;
         bool m_escapeDown = false;
-        bool m_rightArrow = false;
-        bool m_leftArrow = false;
+        bool m_wDown = false;
+        bool m_sDown = false;
 
 };
 

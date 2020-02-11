@@ -20,6 +20,10 @@ void EventsHandler::pollEvents(void)
                 break;
             case SDL_KEYDOWN:
                 keyDownEvents(event);
+                break;
+            case SDL_KEYUP:
+                keyUpEvents(event);
+                break;
             default:
                 break;
         }        
@@ -34,11 +38,27 @@ void EventsHandler::keyDownEvents(SDL_Event &event)
         case SDLK_ESCAPE:
             m_escapeDown = true;
             break;
-        case SDLK_RIGHT:
-            m_rightArrow = (event.key.keysym.sym == SDLK_RIGHT);
+        case SDLK_w:
+            m_wDown = true;
             break;
-        case SDLK_LEFT:
-            m_leftArrow = true;
+        case SDLK_s:
+            m_sDown = true;
+            break;
+        default:
+            break;
+    }
+}
+
+void EventsHandler::keyUpEvents(SDL_Event &event)
+
+{
+    switch (event.key.keysym.sym)
+    {
+        case SDLK_w:
+            m_wDown = false;
+            break;
+        case SDLK_s:
+            m_sDown = false;
             break;
         default:
             break;

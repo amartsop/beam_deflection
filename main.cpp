@@ -24,8 +24,8 @@
 
 int main(void){
 
-    // // Events object 
-    // EventsHandler events;
+    // Events object 
+    EventsHandler events;
 
     // Display object
     Display display(WIDTH, HEIGHT, "Graphics 4");
@@ -62,8 +62,6 @@ int main(void){
     // Counter
     float counter = 0.0f;
 
-    //SDL events handle
-    SDL_Event events;
 
     while (!display.isClosed()){
 
@@ -99,8 +97,8 @@ int main(void){
         // Display update
         display.update(events);
 
-        // // Poll events
-        // events.pollEvents();
+        // Poll events
+        events.pollEvents();
 
         counter += 0.01f;
     }

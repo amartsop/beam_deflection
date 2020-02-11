@@ -33,39 +33,17 @@ void Camera::cameraMotion(void)
 }
 
 
-void Camera::keyboardMapping(SDL_Event &events)
+void Camera::keyboardMapping(EventsHandler &events)
 {
-    // SDL_Event *p_event = events;
-    
-    if (SDL_PollEvent(&events)){
-
-        if (events.type == SDL_KEYDOWN)
-        {
-            m_cameraKeyboard[wKeyNum] =  (events.key.keysym.sym == SDLK_w);
-            m_cameraKeyboard[sKeyNum] = (events.key.keysym.sym == SDLK_s);
-            m_cameraKeyboard[dKeyNum] = (events.key.keysym.sym == SDLK_d);
-            m_cameraKeyboard[aKeyNum] = (events.key.keysym.sym == SDLK_a);
-        }
-        // else if (events.type == SDL_MOUSEMOTION)
-        // {
-        //     std::cout << events.motion.x << ", " << events.motion.y << std::endl;
-        // }
-    }
-
-    else
-    {
-        memset(m_cameraKeyboard, 0, keysNum);
-    }
+    m_cameraKeyboard[wKeyNum] =  events.getWKeyStatus();
+    m_cameraKeyboard[sKeyNum] = events.getSKeyStatus();
 }
 
-
-void Camera::update(SDL_Event &events)
+void Camera::update(EventsHandler &events)
 {
-    cameraMotion();
     keyboardMapping(events);
-
+    cameraMotion();
 }
-
 
 glm::mat4 Camera::getViewProjection(void)
 {

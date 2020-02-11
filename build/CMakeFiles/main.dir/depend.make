@@ -358,10 +358,12 @@ CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/vec3.hpp
 CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/vec4.hpp
 CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/vector_relational.hpp
 CMakeFiles/main.dir/src/camera.cpp.o: ../include/camera.h
+CMakeFiles/main.dir/src/camera.cpp.o: ../include/events_handler.h
 CMakeFiles/main.dir/src/camera.cpp.o: ../src/camera.cpp
 
 CMakeFiles/main.dir/src/display.cpp.o: .././libs/glew-1.13.0/include/GL/glew.h
 CMakeFiles/main.dir/src/display.cpp.o: ../include/display.h
+CMakeFiles/main.dir/src/display.cpp.o: ../include/events_handler.h
 CMakeFiles/main.dir/src/display.cpp.o: ../src/display.cpp
 
 CMakeFiles/main.dir/src/events_handler.cpp.o: ../include/events_handler.h
@@ -655,6 +657,7 @@ CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/vec3.hpp
 CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/vec4.hpp
 CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/vector_relational.hpp
 CMakeFiles/main.dir/src/shader.cpp.o: ../include/camera.h
+CMakeFiles/main.dir/src/shader.cpp.o: ../include/events_handler.h
 CMakeFiles/main.dir/src/shader.cpp.o: ../include/shader.h
 CMakeFiles/main.dir/src/shader.cpp.o: ../include/transform.h
 CMakeFiles/main.dir/src/shader.cpp.o: ../src/shader.cpp
@@ -764,6 +767,7 @@ CMakeFiles/main.dir/src/transform.cpp.o: ../src/transform.cpp
 
 CMakeFiles/main.dir/src/user_interface.cpp.o: .././libs/glew-1.13.0/include/GL/glew.h
 CMakeFiles/main.dir/src/user_interface.cpp.o: ../include/display.h
+CMakeFiles/main.dir/src/user_interface.cpp.o: ../include/events_handler.h
 CMakeFiles/main.dir/src/user_interface.cpp.o: ../include/imconfig.h
 CMakeFiles/main.dir/src/user_interface.cpp.o: ../include/imgui.h
 CMakeFiles/main.dir/src/user_interface.cpp.o: ../include/imgui_impl_opengl3.h
