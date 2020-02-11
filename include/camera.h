@@ -31,32 +31,34 @@ class Camera
 
 
     private:
+        const glm::vec3 forwardCameraAxis = glm::vec3(0, 0, 1);
+        const glm::vec3 upwardCameraAxis = glm::vec3(0, 1, 0);
+
 
         void cameraMotion(void);
 
         void keyboardMapping(EventsHandler &events);
-        void mouseMapping(EventsHandler &events);
 
         const float m_cameraForwardScale = 0.1;
         const float m_cameraSideScale = 0.1;
+        const float m_rotationYScale = 0.02;
+        const float m_rotationXScale = 0.02;
 
         enum {
-            wKeyNum,
-            sKeyNum,
-            aKeyNum,
-            dKeyNum,
+            wKeyNum, sKeyNum, aKeyNum, dKeyNum,
+            upArrowNum, downArrowNum, leftArrowNum, rightArrowNum,
             keysNum
         };
 
         bool m_keyboard[keysNum];
-        EventsHandler::mouseCoordinates m_mouse;
         
-
         glm::mat4 m_perspective;
         glm::vec3 m_initialPosition;
         glm::vec3 m_position;
         glm::vec3 m_forward;
         glm::vec3 m_up;
+
+        float m_theta, m_phi;
 };
 
 #endif
