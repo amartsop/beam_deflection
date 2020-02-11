@@ -6,6 +6,7 @@
 #include <glm/gtx/transform.hpp>
 #include <iostream>
 #include "events_handler.h"
+#include "display.h"
 
 //Doesn't update when we resize the window
 
@@ -34,6 +35,7 @@ class Camera
         void cameraMotion(void);
 
         void keyboardMapping(EventsHandler &events);
+        void mouseMapping(EventsHandler &events);
 
         const float m_cameraForwardScale = 0.1;
         const float m_cameraSideScale = 0.1;
@@ -46,7 +48,9 @@ class Camera
             keysNum
         };
 
-        bool m_cameraKeyboard[keysNum];
+        bool m_keyboard[keysNum];
+        EventsHandler::mouseCoordinates m_mouse;
+        
 
         glm::mat4 m_perspective;
         glm::vec3 m_initialPosition;

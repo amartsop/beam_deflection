@@ -359,6 +359,7 @@ CMakeFiles/main.dir/src/camera.cpp.o
  .././libs/glm-0.9.7.1/glm/vec4.hpp
  .././libs/glm-0.9.7.1/glm/vector_relational.hpp
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/camera.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/display.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/events_handler.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/src/camera.cpp
 CMakeFiles/main.dir/src/display.cpp.o
@@ -658,6 +659,7 @@ CMakeFiles/main.dir/src/shader.cpp.o
  .././libs/glm-0.9.7.1/glm/vec4.hpp
  .././libs/glm-0.9.7.1/glm/vector_relational.hpp
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/camera.h
+ /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/display.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/events_handler.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/shader.h
  /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/transform.h

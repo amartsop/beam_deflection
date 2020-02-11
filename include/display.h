@@ -11,7 +11,11 @@ class Display
 {
     public:
 
-        Display(int width, int height, const std::string& title);
+        Display(const std::string& title);
+
+        // Width and height
+        static const int height = 600;
+        static const int width = 800;
 
         void clear(float r, float g, float b, float a);
         void update(EventsHandler &event);
@@ -24,13 +28,16 @@ class Display
         virtual ~Display();
 
 
+
     protected:
 
     private:
 
+
         SDL_Window* m_window;
         SDL_GLContext m_glContext;
         bool m_isClosed;
+
 };
 
 #endif // DISPLAY_H

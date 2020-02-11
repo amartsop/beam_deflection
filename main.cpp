@@ -28,7 +28,7 @@ int main(void){
     EventsHandler events;
 
     // Display object
-    Display display(WIDTH, HEIGHT, "Graphics 4");
+    Display display("Graphics 4");
 
     // // User inteface (imgui & events)
     // UserInterface interface(&display);

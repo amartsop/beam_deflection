@@ -2207,6 +2207,8 @@ iostream
 -
 events_handler.h
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/events_handler.h
+display.h
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/display.h
 
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/display.h
 SDL2/SDL.h
@@ -2317,6 +2319,8 @@ iostream
 -
 events_handler.h
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/events_handler.h
+display.h
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/display.h
 
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/display.h
 SDL2/SDL.h

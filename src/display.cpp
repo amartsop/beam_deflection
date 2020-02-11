@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <GL/glew.h>
 
-Display::Display(int width, int height, const std::string& title)
+Display::Display(const std::string& title)
 {
     SDL_Init(SDL_INIT_EVERYTHING);   //Change --> If you use SDL not only just for windows
 

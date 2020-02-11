@@ -24,10 +24,19 @@ void EventsHandler::pollEvents(void)
             case SDL_KEYUP:
                 keyUpEvents(event);
                 break;
+            case SDL_MOUSEMOTION:
+                mouseMotionEvents(event);
+                break;
             default:
                 break;
         }        
 	} 
+}
+
+void EventsHandler::mouseMotionEvents(SDL_Event &event)
+{
+    m_mouseCoordinates.mouseX = (int) event.motion.x;
+    m_mouseCoordinates.mouseY = (int) event.motion.y;
 }
 
 void EventsHandler::keyDownEvents(SDL_Event &event)

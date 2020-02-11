@@ -358,6 +358,7 @@ CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/vec3.hpp
 CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/vec4.hpp
 CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/vector_relational.hpp
 CMakeFiles/main.dir/src/camera.cpp.o: ../include/camera.h
+CMakeFiles/main.dir/src/camera.cpp.o: ../include/display.h
 CMakeFiles/main.dir/src/camera.cpp.o: ../include/events_handler.h
 CMakeFiles/main.dir/src/camera.cpp.o: ../src/camera.cpp
 
@@ -657,6 +658,7 @@ CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/vec3.hpp
 CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/vec4.hpp
 CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/vector_relational.hpp
 CMakeFiles/main.dir/src/shader.cpp.o: ../include/camera.h
+CMakeFiles/main.dir/src/shader.cpp.o: ../include/display.h
 CMakeFiles/main.dir/src/shader.cpp.o: ../include/events_handler.h
 CMakeFiles/main.dir/src/shader.cpp.o: ../include/shader.h
 CMakeFiles/main.dir/src/shader.cpp.o: ../include/transform.h
