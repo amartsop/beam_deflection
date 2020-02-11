@@ -11,9 +11,6 @@ class EventsHandler
 
         void pollEvents(void);
         
-        struct mouseCoordinates{
-            int mouseX;
-            int mouseY; };
 
         //Getters
         bool getQuitStatus() { return m_quit; }
@@ -22,9 +19,11 @@ class EventsHandler
         bool getKeyStatusS() { return m_sDown; }
         bool getKeyStatusA() { return m_aDown; }
         bool getKeyStatusD() { return m_dDown; }
+        bool getKeyStatusUpArrow() { return m_upArrowDown; }
+        bool getKeyStatusDownArrow() { return m_downArrowDown; }
+        bool getKeyStatusLeftArrow() { return m_leftArrowDown; }
+        bool getKeyStatusRightArrow() { return m_rightArrowDown; }
         
-        mouseCoordinates getMouseCoordinates() { return m_mouseCoordinates; }
-
         ~EventsHandler(void) {};
 
 
@@ -32,7 +31,6 @@ class EventsHandler
         
         void keyDownEvents(SDL_Event &event);
         void keyUpEvents(SDL_Event &event);
-        void mouseMotionEvents(SDL_Event &event);
 
         bool m_quit = false;
         bool m_escapeDown = false;
@@ -40,12 +38,10 @@ class EventsHandler
         bool m_sDown = false;
         bool m_aDown = false;
         bool m_dDown = false;
-        
-        mouseCoordinates m_mouseCoordinates {0, 0};
-
-        
-
-
+        bool m_upArrowDown = false;
+        bool m_downArrowDown = false;
+        bool m_leftArrowDown = false;
+        bool m_rightArrowDown = false;
 };
 
 #endif

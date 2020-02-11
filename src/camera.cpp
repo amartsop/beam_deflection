@@ -4,10 +4,10 @@
 Camera::Camera(const glm::vec3 &pos, float fov, float aspect, float zNear,
     float zFar)
 {
+    // Initialize member variables;
     m_perspective = glm::perspective(fov, aspect, zNear, zFar);
     m_position = pos; m_initialPosition = m_position;
-    memset(m_keyboard, 0, keysNum);
-
+    memset(m_keyboard, 0, keysNum); m_theta = 0; m_phi = 0;
     m_forward = forwardCameraAxis;
     m_up = upwardCameraAxis;
 }
@@ -25,38 +25,31 @@ void Camera::setCameraOrientation(glm::vec3 forwardFrame, glm::vec3 upwardFrame)
 void Camera::cameraMotion(void)
 {
 
-
-
-    float xMouseMapped = SignalProcessing<float>::map((float)m_mouse.mouseX / 
-        (float)Display::width, 0.0, 1.0, 1.0, -1.0);
-
-    float yMouseMapped = SignalProcessing<float>::map((float)m_mouse.mouseY / 
-        (float)Display::width, 0.0, 1.0, 1.0, -1.0);
-
-    float theta = atan2(xMouseMapped, 5.0);
-
-    float phi = atan2(yMouseMapped, 5.0);
-
-
-    glm::mat4 rotyMatrix = glm::rotate(theta, glm::vec3(0, 1, 0));
-    glm::mat4 rotxMatrix = glm::rotate(phi, glm::vec3(1, 0, 0));
+    // Camera rotation
+    m_theta +=  (float)m_keyboard[leftArrowNum] * (m_rotationYScale) + 
+        (float)m_keyboard[rightArrowNum] * (-m_rotationYScale);
+    m_phi +=  (float)m_keyboard[downArrowNum] * (m_rotationXScale) + 
+        (float)m_keyboard[upArrowNum] * (-m_rotationXScale);
+    glm::mat4 rotyMatrix = glm::rotate(m_theta, glm::vec3(0, 1, 0));
+    glm::mat4 rotxMatrix = glm::rotate(m_phi, glm::vec3(1, 0, 0));
     glm::mat4 rotMatix = rotyMatrix * rotxMatrix;
-
     glm::vec4 forwardAug = rotMatix * glm::vec4(forwardCameraAxis, 1.0);
     glm::vec4 upwardAug = rotMatix * glm::vec4(upwardCameraAxis, 1.0);
-
-
     m_forward = glm::vec3(forwardAug.x, forwardAug.y, forwardAug.z);
     m_up = glm::vec3(upwardAug.x, upwardAug.y, upwardAug.z);
 
-
+    // Camera position
     m_position.x += ((float)m_keyboard[aKeyNum] * (m_cameraSideScale) + 
         (float)m_keyboard[dKeyNum] * (-m_cameraSideScale));
     
     m_position.z += ((float)m_keyboard[wKeyNum] * (m_cameraForwardScale) 
         + (float)m_keyboard[sKeyNum] * (-m_cameraForwardScale));
-        
+
     
+    glm::vec4 ar = rotMatix * glm::vec4(m_position + m_initialPosition, 1.0);
+
+    m_position = glm::vec3(ar.x, ar.y, ar.z);
+
 }
 
 
@@ -66,18 +59,16 @@ void Camera::keyboardMapping(EventsHandler &events)
     m_keyboard[sKeyNum] = events.getKeyStatusS();
     m_keyboard[aKeyNum] = events.getKeyStatusA();
     m_keyboard[dKeyNum] = events.getKeyStatusD();
+    m_keyboard[upArrowNum] = events.getKeyStatusUpArrow();
+    m_keyboard[downArrowNum] = events.getKeyStatusDownArrow();
+    m_keyboard[leftArrowNum] = events.getKeyStatusLeftArrow();
+    m_keyboard[rightArrowNum] = events.getKeyStatusRightArrow();
 }
 
-void Camera::mouseMapping(EventsHandler &events)
-{
-    m_mouse = events.getMouseCoordinates();
-    
-}
 
 void Camera::update(EventsHandler &events)
 {
     keyboardMapping(events);
-    mouseMapping(events);
     cameraMotion();
 }
 
