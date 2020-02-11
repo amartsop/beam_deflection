@@ -35,17 +35,12 @@ void EventsHandler::keyDownEvents(SDL_Event &event)
 
     switch (event.key.keysym.sym)
     {
-        case SDLK_ESCAPE:
-            m_escapeDown = true;
-            break;
-        case SDLK_w:
-            m_wDown = true;
-            break;
-        case SDLK_s:
-            m_sDown = true;
-            break;
-        default:
-            break;
+        case SDLK_ESCAPE: m_escapeDown = true; break;
+        case SDLK_w: m_wDown = true; break;
+        case SDLK_s: m_sDown = true; break;
+        case SDLK_a: m_aDown = true; break;
+        case SDLK_d: m_dDown = true; break;
+        default: break;
     }
 }
 
@@ -54,14 +49,11 @@ void EventsHandler::keyUpEvents(SDL_Event &event)
 {
     switch (event.key.keysym.sym)
     {
-        case SDLK_w:
-            m_wDown = false;
-            break;
-        case SDLK_s:
-            m_sDown = false;
-            break;
-        default:
-            break;
+        case SDLK_w: m_wDown = false; break;
+        case SDLK_s: m_sDown = false; break;
+        case SDLK_a: m_aDown = false; break;
+        case SDLK_d: m_dDown = false; break;
+        default: break;
     }
 }
 

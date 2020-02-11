@@ -15,9 +15,10 @@ class EventsHandler
         //Getters
         bool getQuitStatus() { return m_quit; }
         bool getEscapeStatus() { return m_escapeDown; }
-        bool getWKeyStatus() { return m_wDown; }
-        bool getSKeyStatus() { return m_sDown; }
-
+        bool getKeyStatusW() { return m_wDown; }
+        bool getKeyStatusS() { return m_sDown; }
+        bool getKeyStatusA() { return m_aDown; }
+        bool getKeyStatusD() { return m_dDown; }
 
         ~EventsHandler(void) {};
 
@@ -30,6 +31,8 @@ class EventsHandler
         bool m_escapeDown = false;
         bool m_wDown = false;
         bool m_sDown = false;
+        bool m_aDown = false;
+        bool m_dDown = false;
 
 };
 

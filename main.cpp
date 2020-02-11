@@ -30,8 +30,8 @@ int main(void){
     // Display object
     Display display(WIDTH, HEIGHT, "Graphics 4");
 
-    // User inteface (imgui & events)
-    UserInterface interface(&display);
+    // // User inteface (imgui & events)
+    // UserInterface interface(&display);
 
     // Geometry loading
     Vertex vertices[]= {Vertex(glm::vec3(-0.6,-0.5, 0), glm::vec2(0.0, 0.0)),
@@ -88,8 +88,8 @@ int main(void){
         texture.bind(0);
         mesh2.Draw();
 
-        // Interface update
-        interface.update();
+        // // Interface update
+        // interface.update();
 
         // Camera update
         camera.update(events);

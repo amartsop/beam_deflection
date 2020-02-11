@@ -25,8 +25,8 @@ void Camera::setCameraOrientation(glm::vec3 forwardFrame, glm::vec3 upwardFrame)
 
 void Camera::cameraMotion(void)
 {
-    m_position.x += ((float)m_cameraKeyboard[aKeyNum] * (0.1) + 
-        (float)m_cameraKeyboard[dKeyNum] * (-0.1));
+    m_position.x += ((float)m_cameraKeyboard[aKeyNum] * (m_cameraSideScale) + 
+        (float)m_cameraKeyboard[dKeyNum] * (-m_cameraSideScale));
     
     m_position.z += ((float)m_cameraKeyboard[wKeyNum] * (m_cameraForwardScale) 
         + (float)m_cameraKeyboard[sKeyNum] * (-m_cameraForwardScale));
@@ -35,8 +35,10 @@ void Camera::cameraMotion(void)
 
 void Camera::keyboardMapping(EventsHandler &events)
 {
-    m_cameraKeyboard[wKeyNum] =  events.getWKeyStatus();
-    m_cameraKeyboard[sKeyNum] = events.getSKeyStatus();
+    m_cameraKeyboard[wKeyNum] = events.getKeyStatusW();
+    m_cameraKeyboard[sKeyNum] = events.getKeyStatusS();
+    m_cameraKeyboard[aKeyNum] = events.getKeyStatusA();
+    m_cameraKeyboard[dKeyNum] = events.getKeyStatusD();
 }
 
 void Camera::update(EventsHandler &events)
