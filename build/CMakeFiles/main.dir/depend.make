@@ -158,7 +158,6 @@ CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/./gtx/spline.inl
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/./gtx/std_based_type.hpp
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/./gtx/std_based_type.inl
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/./gtx/string_cast.hpp
-CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/./gtx/string_cast.inl
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/./gtx/transform.hpp
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/./gtx/transform2.hpp
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/./gtx/transform2.inl
@@ -238,6 +237,11 @@ CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/fwd.hpp
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/geometric.hpp
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/glm.hpp
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/matrix_transform.hpp
+CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/quaternion.hpp
+CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/type_precision.hpp
+CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/dual_quaternion.hpp
+CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/string_cast.hpp
+CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/string_cast.inl
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/transform.hpp
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/transform.inl
 CMakeFiles/main.dir/main.cpp.o: .././libs/glm-0.9.7.1/glm/integer.hpp
@@ -267,6 +271,7 @@ CMakeFiles/main.dir/main.cpp.o: .././include/imgui_impl_sdl.h
 CMakeFiles/main.dir/main.cpp.o: .././include/mesh.h
 CMakeFiles/main.dir/main.cpp.o: .././include/obj_loader.h
 CMakeFiles/main.dir/main.cpp.o: .././include/shader.h
+CMakeFiles/main.dir/main.cpp.o: .././include/signal_processing.hpp
 CMakeFiles/main.dir/main.cpp.o: .././include/texture.h
 CMakeFiles/main.dir/main.cpp.o: .././include/transform.h
 CMakeFiles/main.dir/main.cpp.o: .././include/user_interface.h
@@ -338,6 +343,16 @@ CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/constants.hp
 CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/constants.inl
 CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/matrix_transform.hpp
 CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/matrix_transform.inl
+CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/quaternion.hpp
+CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/quaternion.inl
+CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/type_precision.hpp
+CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/type_precision.inl
+CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/vec1.hpp
+CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/vec1.inl
+CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/dual_quaternion.hpp
+CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/dual_quaternion.inl
+CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/string_cast.hpp
+CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/string_cast.inl
 CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/transform.hpp
 CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/transform.inl
 CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/integer.hpp
@@ -360,6 +375,7 @@ CMakeFiles/main.dir/src/camera.cpp.o: .././libs/glm-0.9.7.1/glm/vector_relationa
 CMakeFiles/main.dir/src/camera.cpp.o: ../include/camera.h
 CMakeFiles/main.dir/src/camera.cpp.o: ../include/display.h
 CMakeFiles/main.dir/src/camera.cpp.o: ../include/events_handler.h
+CMakeFiles/main.dir/src/camera.cpp.o: ../include/signal_processing.hpp
 CMakeFiles/main.dir/src/camera.cpp.o: ../src/camera.cpp
 
 CMakeFiles/main.dir/src/display.cpp.o: .././libs/glew-1.13.0/include/GL/glew.h
@@ -638,6 +654,16 @@ CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/constants.hp
 CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/constants.inl
 CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/matrix_transform.hpp
 CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/matrix_transform.inl
+CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/quaternion.hpp
+CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/quaternion.inl
+CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/type_precision.hpp
+CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/type_precision.inl
+CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/vec1.hpp
+CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtc/vec1.inl
+CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/dual_quaternion.hpp
+CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/dual_quaternion.inl
+CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/string_cast.hpp
+CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/string_cast.inl
 CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/transform.hpp
 CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/gtx/transform.inl
 CMakeFiles/main.dir/src/shader.cpp.o: .././libs/glm-0.9.7.1/glm/integer.hpp
@@ -661,6 +687,7 @@ CMakeFiles/main.dir/src/shader.cpp.o: ../include/camera.h
 CMakeFiles/main.dir/src/shader.cpp.o: ../include/display.h
 CMakeFiles/main.dir/src/shader.cpp.o: ../include/events_handler.h
 CMakeFiles/main.dir/src/shader.cpp.o: ../include/shader.h
+CMakeFiles/main.dir/src/shader.cpp.o: ../include/signal_processing.hpp
 CMakeFiles/main.dir/src/shader.cpp.o: ../include/transform.h
 CMakeFiles/main.dir/src/shader.cpp.o: ../src/shader.cpp
 

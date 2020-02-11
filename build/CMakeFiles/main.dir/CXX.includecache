@@ -1158,12 +1158,6 @@ string
 string_cast.inl
 .././libs/glm-0.9.7.1/glm/./gtx/string_cast.inl
 
-.././libs/glm-0.9.7.1/glm/./gtx/string_cast.inl
-cstdarg
--
-cstdio
--
-
 .././libs/glm-0.9.7.1/glm/./gtx/transform.hpp
 ../glm.hpp
 .././libs/glm-0.9.7.1/glm/./glm.hpp
@@ -2203,12 +2197,16 @@ glm/glm.hpp
 -
 glm/gtx/transform.hpp
 -
+glm/gtx/string_cast.hpp
+-
 iostream
 -
 events_handler.h
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/events_handler.h
 display.h
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/display.h
+signal_processing.hpp
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/signal_processing.hpp
 
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/display.h
 SDL2/SDL.h
@@ -2280,6 +2278,8 @@ transform.h
 camera.h
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/camera.h
 
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/signal_processing.hpp
+
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/./include/texture.h
 string
 -
@@ -2315,12 +2315,16 @@ glm/glm.hpp
 -
 glm/gtx/transform.hpp
 -
+glm/gtx/string_cast.hpp
+-
 iostream
 -
 events_handler.h
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/events_handler.h
 display.h
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/display.h
+signal_processing.hpp
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/signal_processing.hpp
 
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/display.h
 SDL2/SDL.h
@@ -2391,6 +2395,8 @@ transform.h
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/transform.h
 camera.h
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/camera.h
+
+/home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/signal_processing.hpp
 
 /home/thanos/Desktop/GraphicsDevelopment/BeamDeflection/include/stb_image.h
 stdio.h

@@ -34,7 +34,7 @@ int main(void){
     // UserInterface interface(&display);
 
     // Geometry loading
-    Vertex vertices[]= {Vertex(glm::vec3(-0.6,-0.5, 0), glm::vec2(0.0, 0.0)),
+    Vertex vertices[]= {Vertex(glm::vec3(-0.5,-0.5, 0), glm::vec2(0.0, 0.0)),
                         Vertex(glm::vec3(0, 0.5, 0), glm::vec2(0.5, 1.0)),
                         Vertex(glm::vec3(0.5, -0.5, 0), glm::vec2(1.0, 0.0)) };
 
@@ -52,8 +52,8 @@ int main(void){
     Texture texture("./share/grate_g.png");
 
     // Camera object
-    Camera camera(glm::vec3(0, 0, -3), 70.0f, (float)WIDTH / (float)HEIGHT, 
-        0.01f, 1000.0f);
+    Camera camera(glm::vec3(0.0, 0.0, 0.0), 70.0f, 
+        (float)Display::width / (float)Display::height,  0.01f, 1000.0f);
 
     // Model transforms
     Transform transform;
@@ -70,10 +70,11 @@ int main(void){
             BACKGROUND_TRANSPARENCY);
 
         // Move model        
-        glm::vec3 new_pos = glm::vec3( 0.0 * counter, 0.0 * counter, 0.0 * counter);        
+        glm::vec3 new_pos = glm::vec3( 0.0, 0.0 * counter, 3.0);        
         glm::vec3 new_rot = glm::vec3(0.0, glm::radians(180.0), 0.0 * counter); 
         transform.SetPos(new_pos);
         transform.SetRot(new_rot);
+
 
         // // Move camera
         // glm::vec3 cameraForward = glm::vec3(0.0, 0, 1);

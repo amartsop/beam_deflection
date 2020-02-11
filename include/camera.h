@@ -4,15 +4,18 @@
 
 #include <glm/glm.hpp>
 #include <glm/gtx/transform.hpp>
+#include <glm/gtx/string_cast.hpp>
 #include <iostream>
 #include "events_handler.h"
 #include "display.h"
+#include "signal_processing.hpp"
 
 //Doesn't update when we resize the window
 
 class Camera
 {
     public:
+        //Camera constructor
         Camera(const glm::vec3 &pos, float fov, float aspect, float zNear, 
             float zFar);
 
@@ -24,7 +27,7 @@ class Camera
         // Camera update
         void update(EventsHandler &events);
 
-
+        // Projections
         glm::mat4 getViewProjection(void);
 
         ~Camera();
@@ -39,6 +42,9 @@ class Camera
 
         const float m_cameraForwardScale = 0.1;
         const float m_cameraSideScale = 0.1;
+        
+        const glm::vec3 forwardCameraAxis = glm::vec3(0, 0, 1);
+        const glm::vec3 upwardCameraAxis = glm::vec3(0, 1, 0);
 
         enum {
             wKeyNum,
