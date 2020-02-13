@@ -36,8 +36,6 @@ class Camera
     private:
         const glm::vec3 forwardCameraAxis = glm::vec3(0, 0, 1);
         const glm::vec3 upwardCameraAxis = glm::vec3(0, 1, 0);
-        glm::vec3 initialCameraPos = glm::vec3(0, 0, 0);
-
 
         void cameraMotion(void);
 

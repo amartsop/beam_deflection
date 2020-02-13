@@ -33,16 +33,18 @@ int main(void){
     // // User inteface (imgui & events)
     // UserInterface interface(&display);
 
-    // Geometry loading
-    Vertex vertices[]= {Vertex(glm::vec3(-0.5,-0.5, 0), glm::vec2(0.0, 0.0)),
-                        Vertex(glm::vec3(0, 0.5, 0), glm::vec2(0.5, 1.0)),
-                        Vertex(glm::vec3(0.5, -0.5, 0), glm::vec2(1.0, 0.0)) };
+    // // Geometry loading
+    // Vertex vertices[]= {Vertex(glm::vec3(-0.5,-0.5, 0), glm::vec2(0.0, 0.0)),
+    //                     Vertex(glm::vec3(0, 0.5, 0), glm::vec2(0.5, 1.0)),
+    //                     Vertex(glm::vec3(0.5, -0.5, 0), glm::vec2(1.0, 0.0)) };
 
-    unsigned int indices[] = {0, 1, 2};
+    // unsigned int indices[] = {0, 1, 2};
 
-    Mesh mesh(vertices, sizeof(vertices) / sizeof(vertices[0]), indices, 
-        sizeof(indices) / sizeof(indices[0]));
+    // Mesh mesh(vertices, sizeof(vertices) / sizeof(vertices[0]), indices, 
+    //     sizeof(indices) / sizeof(indices[0]));
 
+
+    // Mesh creation
     Mesh mesh2("./share/monkey3.obj");
 
     // Shader object
@@ -71,17 +73,10 @@ int main(void){
 
         // Move model        
         glm::vec3 new_pos = glm::vec3( 0.0, 0.0 * counter, 3.0);        
-        glm::vec3 new_rot = glm::vec3(0.0, glm::radians(180.0), 0.0 * counter); 
+        glm::vec3 new_rot = glm::vec3(0.0, 0.0 * counter, 0.0 * counter); 
         transform.SetPos(new_pos);
         transform.SetRot(new_rot);
 
-
-        // // Move camera
-        // glm::vec3 cameraForward = glm::vec3(0.0, 0, 1);
-        // glm::vec3 cameraUpward = glm::vec3(0, 1, 0);
-        // glm::vec3 cameraPosition = glm::vec3(0, 0, counter);
-        // camera.setCameraOrientation(cameraForward, cameraUpward);
-        // camera.setCameraPosition(cameraPosition);
 
         // Updates draw update
         shader.bind();

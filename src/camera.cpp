@@ -6,7 +6,7 @@ Camera::Camera(const glm::vec3 &pos, float fov, float aspect, float zNear,
 {
     // Initialize member variables;
     m_perspective = glm::perspective(fov, aspect, zNear, zFar);
-    m_position = pos; m_initialPosition = m_position;
+    m_position = pos; m_initialPosition = pos;
     memset(m_keyboard, 0, keysNum); m_theta = 0; m_phi = 0;
     m_forward = forwardCameraAxis;
     m_up = upwardCameraAxis;
@@ -32,23 +32,30 @@ void Camera::cameraMotion(void)
         (float)m_keyboard[upArrowNum] * (-m_rotationXScale);
     glm::mat4 rotyMatrix = glm::rotate(m_theta, glm::vec3(0, 1, 0));
     glm::mat4 rotxMatrix = glm::rotate(m_phi, glm::vec3(1, 0, 0));
-    glm::mat4 rotMatix = rotyMatrix * rotxMatrix;
-    glm::vec4 forwardAug = rotMatix * glm::vec4(forwardCameraAxis, 1.0);
-    glm::vec4 upwardAug = rotMatix * glm::vec4(upwardCameraAxis, 1.0);
+    glm::mat4 rotMatrix = rotyMatrix * rotxMatrix;
+    glm::vec4 forwardAug = rotMatrix * glm::vec4(forwardCameraAxis, 1.0);
+    glm::vec4 upwardAug = rotMatrix * glm::vec4(upwardCameraAxis, 1.0);
     m_forward = glm::vec3(forwardAug.x, forwardAug.y, forwardAug.z);
     m_up = glm::vec3(upwardAug.x, upwardAug.y, upwardAug.z);
 
     // Camera position
-    m_position.x += ((float)m_keyboard[aKeyNum] * (m_cameraSideScale) + 
+    float posTempX = ((float)m_keyboard[aKeyNum] * (m_cameraSideScale) + 
         (float)m_keyboard[dKeyNum] * (-m_cameraSideScale));
     
-    m_position.z += ((float)m_keyboard[wKeyNum] * (m_cameraForwardScale) 
+    float posTempZ = ((float)m_keyboard[wKeyNum] * (m_cameraForwardScale) 
         + (float)m_keyboard[sKeyNum] * (-m_cameraForwardScale));
 
-    
-    glm::vec4 ar = rotMatix * glm::vec4(m_position + m_initialPosition, 1.0);
+    glm::vec4 posTemp = rotMatrix * glm::vec4(posTempX, 0.0, posTempZ, 1.0);
 
-    m_position = glm::vec3(ar.x, ar.y, ar.z);
+
+    m_position.x += posTemp.x;
+    m_position.y += posTemp.y;
+    m_position.z += posTemp.z;
+
+    
+    // glm::vec4 ar = rotMatix * glm::vec4(m_position + m_initialPosition, 1.0);
+
+    // m_position = glm::vec3(ar.x, ar.y, ar.z);
 
 }
 
